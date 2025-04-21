@@ -1,9 +1,9 @@
-# Netlify config – Next.js plugin 6.x + standard build
+# netlify.toml – vynutíme Next.js plugin 6.2.0
 
 [build]
 command = "npm run build"
 publish = ".next"
 
 [[plugins]]
-package = "@netlify/plugin-nextjs"
-pinned_version = "6.2.0"
+package         = "@netlify/plugin-nextjs@6.2.0"   # ← explicitní verze 6.x
+pinned_version  = "6.2.0"
