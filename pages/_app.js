@@ -1,5 +1,9 @@
-import '@/styles/globals.css';
-
-export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-}
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './pages/**/*.{js,jsx}',
+    './styles/**/*.{css}',   // ← ať JIT načte utility i z CSS
+  ],
+  theme: { extend: {} },
+  plugins: [],
+};
